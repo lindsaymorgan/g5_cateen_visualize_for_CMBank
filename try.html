@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_03f3c424f9d74e699ba0b231a97434f2 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_03f3c424f9d74e699ba0b231a97434f2" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_03f3c424f9d74e699ba0b231a97434f2 = L.map(
+        'map_03f3c424f9d74e699ba0b231a97434f2', {
+        center: [23.125866, 112.6659713],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+L.control.scale().addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+    
+    
+    var tile_layer_beffbaa438f24a90b9155342cb2d9aa2 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+    
+        var marker_ae38c6575c6e4934ac2b4490eaa9cb39 = L.marker(
+            [23.280913983695125, 113.81469903957209],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_ae38c6575c6e4934ac2b4490eaa9cb39.bindTooltip(
+            `<div>`
+            + `招商银行(增城支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f889257c0b64b61b28ddd2e2f70db56 = L.marker(
+            [23.128114919665038, 113.23473682145188],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_4f889257c0b64b61b28ddd2e2f70db56.bindTooltip(
+            `<div>`
+            + `招商银行(荔湾支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c90d5ca6a9c34d0590bbb21027779d3a = L.marker(
+            [23.105117109660757, 113.29960254648078],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_c90d5ca6a9c34d0590bbb21027779d3a.bindTooltip(
+            `<div>`
+            + `招商银行(滨江东支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e13a502c089d4003a096e26bf5ea1bc3 = L.marker(
+            [23.128674246765627, 113.26624869754437],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_e13a502c089d4003a096e26bf5ea1bc3.bindTooltip(
+            `<div>`
+            + `招商银行(东山支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a8305a365eb64ed79e2bda801143f974 = L.marker(
+            [23.118484134604866, 113.31262141833537],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_a8305a365eb64ed79e2bda801143f974.bindTooltip(
+            `<div>`
+            + `招商银行(广州分行营业部)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_46567a0fe428409e8d7ac40d1d97f861 = L.marker(
+            [23.128786752848463, 113.31438815262459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_46567a0fe428409e8d7ac40d1d97f861.bindTooltip(
+            `<div>`
+            + `招商银行(广州华强路支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d639231513684b7cbd1b8322022d6ec0 = L.marker(
+            [23.128394791545215, 113.36848193536817],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+        marker_d639231513684b7cbd1b8322022d6ec0.bindTooltip(
+            `<div>`
+            + `招商银行(广州科技园支行)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f8d216c75f934179807d10c15c6e2aa6 = L.marker(
+            [23.124986039344357, 113.31091983700107],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_c0c1a50f8a844f0ab7bf1e6f2bd4f961 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8d216c75f934179807d10c15c6e2aa6.setIcon(icon_c0c1a50f8a844f0ab7bf1e6f2bd4f961);
+            
+    
+        marker_f8d216c75f934179807d10c15c6e2aa6.bindTooltip(
+            `<div>`
+            + `亚洲鱼生上水制造有限公司` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c52885011d6c4aaa8176c7fa96d77f5f = L.marker(
+            [23.121312860098513, 113.31754365154579],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_7cfd85fa7b934a2cbd178388ce3ed840 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c52885011d6c4aaa8176c7fa96d77f5f.setIcon(icon_7cfd85fa7b934a2cbd178388ce3ed840);
+            
+    
+        marker_c52885011d6c4aaa8176c7fa96d77f5f.bindTooltip(
+            `<div>`
+            + `滋粥楼小馆(广州友谊商店店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e03b1e32bd4d4bd98462ca24a8b80b29 = L.marker(
+            [23.015156818310164, 113.33482849974547],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_33bfe74d07f54423b6c8677e7dc90339 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e03b1e32bd4d4bd98462ca24a8b80b29.setIcon(icon_33bfe74d07f54423b6c8677e7dc90339);
+            
+    
+        marker_e03b1e32bd4d4bd98462ca24a8b80b29.bindTooltip(
+            `<div>`
+            + `滋粥楼(南村店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3f9b6b26bb7742a5bb30341cd9a97f1a = L.marker(
+            [22.935412012119087, 113.38107960655832],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_b99a0b10200c4aecac882357c356a224 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3f9b6b26bb7742a5bb30341cd9a97f1a.setIcon(icon_b99a0b10200c4aecac882357c356a224);
+            
+    
+        marker_3f9b6b26bb7742a5bb30341cd9a97f1a.bindTooltip(
+            `<div>`
+            + `滋粥楼(番禺广场总店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e84a05a84ae24d088204f8f710922733 = L.marker(
+            [23.040374101992843, 113.29111062812456],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_4e71b24318aa4183b06e6616ae879081 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e84a05a84ae24d088204f8f710922733.setIcon(icon_4e71b24318aa4183b06e6616ae879081);
+            
+    
+        marker_e84a05a84ae24d088204f8f710922733.bindTooltip(
+            `<div>`
+            + `渔民新村(丽江店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_00ea11fe1a0e4974ab88e256dcd91a14 = L.marker(
+            [23.097055276844866, 113.2285411791059],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_af26e6df3dee45cab9e992f44d68c743 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_00ea11fe1a0e4974ab88e256dcd91a14.setIcon(icon_af26e6df3dee45cab9e992f44d68c743);
+            
+    
+        marker_00ea11fe1a0e4974ab88e256dcd91a14.bindTooltip(
+            `<div>`
+            + `渔民新村(芳村店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_da5128e0818a4f3a87fbff962f432ccf = L.marker(
+            [23.11251546389693, 113.23550909160824],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_e170ee6b15f045a5bd1755b7c1b79dae = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da5128e0818a4f3a87fbff962f432ccf.setIcon(icon_e170ee6b15f045a5bd1755b7c1b79dae);
+            
+    
+        marker_da5128e0818a4f3a87fbff962f432ccf.bindTooltip(
+            `<div>`
+            + `一哥澳门豆捞(西城都荟店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_64cd12222268452ea61eeacf05ddb273 = L.marker(
+            [23.102680673951905, 113.32237048756893],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_38550bcd4f8e4157b9a63716fa5c3ccf = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_64cd12222268452ea61eeacf05ddb273.setIcon(icon_38550bcd4f8e4157b9a63716fa5c3ccf);
+            
+    
+        marker_64cd12222268452ea61eeacf05ddb273.bindTooltip(
+            `<div>`
+            + `一哥澳门豆捞(四季天地店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_be8f64ff243b4c4bb6a6c89db6edaa30 = L.marker(
+            [23.091765738825945, 113.2537833356133],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_a6e347a9f61748f3b64cad8159abedf1 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be8f64ff243b4c4bb6a6c89db6edaa30.setIcon(icon_a6e347a9f61748f3b64cad8159abedf1);
+            
+    
+        marker_be8f64ff243b4c4bb6a6c89db6edaa30.bindTooltip(
+            `<div>`
+            + `一哥澳门豆捞(乐峰广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_846c79454a0f46f58268f78982ee2bb4 = L.marker(
+            [23.12235296521011, 113.321390259108],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_a682a3548bd44f8a983ff07cb44e65e3 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_846c79454a0f46f58268f78982ee2bb4.setIcon(icon_a682a3548bd44f8a983ff07cb44e65e3);
+            
+    
+        marker_846c79454a0f46f58268f78982ee2bb4.bindTooltip(
+            `<div>`
+            + `一哥澳门豆捞(高德置地广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f875276b416841f2a359de9a969ae777 = L.marker(
+            [23.122871245974157, 113.31795240250499],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_1cb7274f95ec445489670bd3ac9c33e7 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f875276b416841f2a359de9a969ae777.setIcon(icon_1cb7274f95ec445489670bd3ac9c33e7);
+            
+    
+        marker_f875276b416841f2a359de9a969ae777.bindTooltip(
+            `<div>`
+            + `一哥澳门豆捞` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_83a0ed35efed43708ec7e9619356dd7c = L.marker(
+            [23.13778966407562, 113.28946011739902],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_3a450f0c0988478d9d3bff1c8fdc2bfa = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_83a0ed35efed43708ec7e9619356dd7c.setIcon(icon_3a450f0c0988478d9d3bff1c8fdc2bfa);
+            
+    
+        marker_83a0ed35efed43708ec7e9619356dd7c.bindTooltip(
+            `<div>`
+            + `新渝城·川菜·火锅(区庄店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_41134470d42e45edb695683f8a95587c = L.marker(
+            [23.119042810924274, 113.31635329364101],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_49800f24b3d246e480da28c7a957afb0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_41134470d42e45edb695683f8a95587c.setIcon(icon_49800f24b3d246e480da28c7a957afb0);
+            
+    
+        marker_41134470d42e45edb695683f8a95587c.bindTooltip(
+            `<div>`
+            + `闻见中国海南菜` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3ffe11cc248a483db2cefe807bef14bc = L.marker(
+            [23.144361188860206, 113.25231004573365],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_2b6554cee6b2424d86af593bfb2e2a1b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ffe11cc248a483db2cefe807bef14bc.setIcon(icon_2b6554cee6b2424d86af593bfb2e2a1b);
+            
+    
+        marker_3ffe11cc248a483db2cefe807bef14bc.bindTooltip(
+            `<div>`
+            + `通巷六号` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5273d3f20c7247029a7eb3378eedada3 = L.marker(
+            [23.13420387158756, 113.32172680469988],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d2de0a7cf91945769a00270ff91e99a0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5273d3f20c7247029a7eb3378eedada3.setIcon(icon_d2de0a7cf91945769a00270ff91e99a0);
+            
+    
+        marker_5273d3f20c7247029a7eb3378eedada3.bindTooltip(
+            `<div>`
+            + `陶陶居酒家(正佳广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_715ca8198e0a4a85bcc83532385eac36 = L.marker(
+            [23.1421859781155, 113.27499484832904],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_f2b36e5f841e42d1b3e73124c4eca6d2 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_715ca8198e0a4a85bcc83532385eac36.setIcon(icon_f2b36e5f841e42d1b3e73124c4eca6d2);
+            
+    
+        marker_715ca8198e0a4a85bcc83532385eac36.bindTooltip(
+            `<div>`
+            + `陶陶居酒家(环市东路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_31d6e283851e49c6a25770a70b7a36a5 = L.marker(
+            [23.39960234407487, 113.2996606585664],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_5b1c57fb7b4041598ae6eeade9d5de7e = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_31d6e283851e49c6a25770a70b7a36a5.setIcon(icon_5b1c57fb7b4041598ae6eeade9d5de7e);
+            
+    
+        marker_31d6e283851e49c6a25770a70b7a36a5.bindTooltip(
+            `<div>`
+            + `陶陶居酒家(白云机场T2店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f9a881edb79d4e53aaffc0c3ff950165 = L.marker(
+            [23.197454672282106, 113.25252338648598],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_97ca4bb3f22a4c26a0dcbcdf58121c79 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9a881edb79d4e53aaffc0c3ff950165.setIcon(icon_97ca4bb3f22a4c26a0dcbcdf58121c79);
+            
+    
+        marker_f9a881edb79d4e53aaffc0c3ff950165.bindTooltip(
+            `<div>`
+            + `陶陶居酒家` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_07f8e1516fea45b6bf37bee377f021d6 = L.marker(
+            [23.18374619604962, 113.26457300617487],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8af186f2ceb24aceb7d1abc075257f54 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07f8e1516fea45b6bf37bee377f021d6.setIcon(icon_8af186f2ceb24aceb7d1abc075257f54);
+            
+    
+        marker_07f8e1516fea45b6bf37bee377f021d6.bindTooltip(
+            `<div>`
+            + `太兴餐厅(凯德广场云尚店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a943694654af493cbd12c72feed1061b = L.marker(
+            [23.1140667864258, 113.2351390542439],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_69e95fb4ba8143c9abebd10bb314cc58 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a943694654af493cbd12c72feed1061b.setIcon(icon_69e95fb4ba8143c9abebd10bb314cc58);
+            
+    
+        marker_a943694654af493cbd12c72feed1061b.bindTooltip(
+            `<div>`
+            + `太兴餐厅(黄沙分店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_85d5fd8c622943fe8ae47f0f23c8139f = L.marker(
+            [23.118318495180066, 113.32566970001558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_e5787209998e486d93b010d44048c7dc = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_85d5fd8c622943fe8ae47f0f23c8139f.setIcon(icon_e5787209998e486d93b010d44048c7dc);
+            
+    
+        marker_85d5fd8c622943fe8ae47f0f23c8139f.bindTooltip(
+            `<div>`
+            + `太兴(天汇igc店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc39b21e9e984fa085cc608661802661 = L.marker(
+            [23.125083759401587, 113.32605264705211],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_3c39e47e83c34a8cbb6901e3f0e883ea = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dc39b21e9e984fa085cc608661802661.setIcon(icon_3c39e47e83c34a8cbb6901e3f0e883ea);
+            
+    
+        marker_dc39b21e9e984fa085cc608661802661.bindTooltip(
+            `<div>`
+            + `太艮堡毋米粥(广州冼村店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_381b861de61f4c33afed138420b4f17b = L.marker(
+            [23.117805174932577, 113.33145113872308],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d3f18e4c9976486b883a93eab3fdc385 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_381b861de61f4c33afed138420b4f17b.setIcon(icon_d3f18e4c9976486b883a93eab3fdc385);
+            
+    
+        marker_381b861de61f4c33afed138420b4f17b.bindTooltip(
+            `<div>`
+            + `太艮堡毋米粥 · 粥底火锅(猎德店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c5f54f78acf14bc8bd97351fe87cab7a = L.marker(
+            [23.151532669968482, 113.31778410355717],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_0aac067b420b431a9837a734cb9d10a7 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c5f54f78acf14bc8bd97351fe87cab7a.setIcon(icon_0aac067b420b431a9837a734cb9d10a7);
+            
+    
+        marker_c5f54f78acf14bc8bd97351fe87cab7a.bindTooltip(
+            `<div>`
+            + `太艮堡毋米粥 · 粥底火锅(东站店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_74e9bc9b042d433d872ea7bbc573b6d9 = L.marker(
+            [23.140768898784394, 113.31047107681697],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_109d5945e3dc49cc8242c54cea307048 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_74e9bc9b042d433d872ea7bbc573b6d9.setIcon(icon_109d5945e3dc49cc8242c54cea307048);
+            
+    
+        marker_74e9bc9b042d433d872ea7bbc573b6d9.bindTooltip(
+            `<div>`
+            + `索菲特大酒店行政走廊` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_47639c9e80f24589be9318a3a2219733 = L.marker(
+            [23.1370007565247, 113.3271002752888],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_6a9729f7c8bf49f48e48614b782cf0db = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47639c9e80f24589be9318a3a2219733.setIcon(icon_6a9729f7c8bf49f48e48614b782cf0db);
+            
+    
+        marker_47639c9e80f24589be9318a3a2219733.bindTooltip(
+            `<div>`
+            + `尚莲·越南泰国料理LIAN(太古汇店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_38e0891bffe04ef6b4a8bd4eacad2b48 = L.marker(
+            [23.134164370708778, 113.31956949395042],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_202d1b123ad4477cb23d664fd08361e5 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38e0891bffe04ef6b4a8bd4eacad2b48.setIcon(icon_202d1b123ad4477cb23d664fd08361e5);
+            
+    
+        marker_38e0891bffe04ef6b4a8bd4eacad2b48.bindTooltip(
+            `<div>`
+            + `榕意·川味之美(天环店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bb7056e3cbde4addad63225b01740e5c = L.marker(
+            [23.116257055347617, 113.32583967748882],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_7a6e89e668974493801f11c9c79f082f = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bb7056e3cbde4addad63225b01740e5c.setIcon(icon_7a6e89e668974493801f11c9c79f082f);
+            
+    
+        marker_bb7056e3cbde4addad63225b01740e5c.bindTooltip(
+            `<div>`
+            + `榕意·川味之美(天德广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ab6417e2a2be421698dafbd5918b31b1 = L.marker(
+            [23.183630952055044, 113.26361305226818],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_88db8255fce743e697f44a462502222e = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab6417e2a2be421698dafbd5918b31b1.setIcon(icon_88db8255fce743e697f44a462502222e);
+            
+    
+        marker_ab6417e2a2be421698dafbd5918b31b1.bindTooltip(
+            `<div>`
+            + `榕意·川味之美(凯德云尚店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_360ecb9181304ae4b875b46ea5e18023 = L.marker(
+            [23.12638766247167, 113.30890638582413],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_9770a47efae2400b9633cfbc773aebb9 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_360ecb9181304ae4b875b46ea5e18023.setIcon(icon_9770a47efae2400b9633cfbc773aebb9);
+            
+    
+        marker_360ecb9181304ae4b875b46ea5e18023.bindTooltip(
+            `<div>`
+            + `榕意·川味之美(289店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_baac507c2b0f4a2aa8defd6bd908235b = L.marker(
+            [23.124005906201536, 113.23089590646998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_36e88630e5ca451f8c11c73b904603fc = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_baac507c2b0f4a2aa8defd6bd908235b.setIcon(icon_36e88630e5ca451f8c11c73b904603fc);
+            
+    
+        marker_baac507c2b0f4a2aa8defd6bd908235b.bindTooltip(
+            `<div>`
+            + `泮溪酒家(古玩城店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_30b1066c6294405393c37744456c06a7 = L.marker(
+            [23.11842940592984, 113.34043935587121],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_f9a0b590ca944c43a9316dbc85a546a7 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_30b1066c6294405393c37744456c06a7.setIcon(icon_f9a0b590ca944c43a9316dbc85a546a7);
+            
+    
+        marker_30b1066c6294405393c37744456c06a7.bindTooltip(
+            `<div>`
+            + `明日家庭料理(珠江新城店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_54b82666a385471fb11eb9a19b0929ba = L.marker(
+            [23.092139807417418, 113.24726735910293],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_fd70886b209040fe9d59e916fc580717 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54b82666a385471fb11eb9a19b0929ba.setIcon(icon_fd70886b209040fe9d59e916fc580717);
+            
+    
+        marker_54b82666a385471fb11eb9a19b0929ba.bindTooltip(
+            `<div>`
+            + `洛奇先生餐吧(太古仓店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0e91b74529504101adac0dd28513f971 = L.marker(
+            [23.11007285077648, 113.33367380619872],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_9cc13354caf94abda23248555d7967da = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0e91b74529504101adac0dd28513f971.setIcon(icon_9cc13354caf94abda23248555d7967da);
+            
+    
+        marker_0e91b74529504101adac0dd28513f971.bindTooltip(
+            `<div>`
+            + `洛奇先生餐吧(琶醍店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8cc67d65d2d94402a1c526981f672b77 = L.marker(
+            [23.120580587826304, 113.32400243206835],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_ebcb39a7616c4f53a5398d9854a18f57 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8cc67d65d2d94402a1c526981f672b77.setIcon(icon_ebcb39a7616c4f53a5398d9854a18f57);
+            
+    
+        marker_8cc67d65d2d94402a1c526981f672b77.bindTooltip(
+            `<div>`
+            + `禄运茶居(优托邦时光店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c3bb64654ffb4e758300b7b508f1c973 = L.marker(
+            [23.172174410724498, 113.2517321494503],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_1378673f60d8495caa1e794e3b01a901 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c3bb64654ffb4e758300b7b508f1c973.setIcon(icon_1378673f60d8495caa1e794e3b01a901);
+            
+    
+        marker_c3bb64654ffb4e758300b7b508f1c973.bindTooltip(
+            `<div>`
+            + `坤记顺和潮汕牛肉(乐天店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e7f3c3f96fb94e198aadb5bb9029b79c = L.marker(
+            [23.008938880116855, 113.34286169714518],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_30e67417437a42959be9c9b1b68625e1 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e7f3c3f96fb94e198aadb5bb9029b79c.setIcon(icon_30e67417437a42959be9c9b1b68625e1);
+            
+    
+        marker_e7f3c3f96fb94e198aadb5bb9029b79c.bindTooltip(
+            `<div>`
+            + `江山享味酒家(番禺万达店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0c1581da0193451b9a632ee6c5f9e233 = L.marker(
+            [23.175179682145917, 113.26136192487462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_aea4a9e12ef34540b5e73d3bf4722413 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c1581da0193451b9a632ee6c5f9e233.setIcon(icon_aea4a9e12ef34540b5e73d3bf4722413);
+            
+    
+        marker_0c1581da0193451b9a632ee6c5f9e233.bindTooltip(
+            `<div>`
+            + `江山酒家(万达广场白云店)广州江山享味酒家(白云万达店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_29fa11a02241443aad2dbcab0a33406b = L.marker(
+            [23.13309015299026, 113.26665700226727],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_bc40fb8d30c846e4bab058bb79590196 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_29fa11a02241443aad2dbcab0a33406b.setIcon(icon_bc40fb8d30c846e4bab058bb79590196);
+            
+    
+        marker_29fa11a02241443aad2dbcab0a33406b.bindTooltip(
+            `<div>`
+            + `和苑酒家(时代店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7c8c93a7cae24dda866b8a314d835b8e = L.marker(
+            [23.14062568151512, 113.31032097160232],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_07eab56973fa43dd963318370b2b6cce = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c8c93a7cae24dda866b8a314d835b8e.setIcon(icon_07eab56973fa43dd963318370b2b6cce);
+            
+    
+        marker_7c8c93a7cae24dda866b8a314d835b8e.bindTooltip(
+            `<div>`
+            + `广州圣丰索菲特大酒店` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1408aa2d81cd450592e35a76438fd6c7 = L.marker(
+            [23.120683187197077, 113.22600401244759],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_f34896262ee7407d84ae3d6993aa1943 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1408aa2d81cd450592e35a76438fd6c7.setIcon(icon_f34896262ee7407d84ae3d6993aa1943);
+            
+    
+        marker_1408aa2d81cd450592e35a76438fd6c7.bindTooltip(
+            `<div>`
+            + `點都德(荔红楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3d27984d87604ea1bd0ac78ef57fc8e6 = L.marker(
+            [23.128935414403294, 113.26598455746333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_fc1784160b6c4407a4d2db0954268952 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3d27984d87604ea1bd0ac78ef57fc8e6.setIcon(icon_fc1784160b6c4407a4d2db0954268952);
+            
+    
+        marker_3d27984d87604ea1bd0ac78ef57fc8e6.bindTooltip(
+            `<div>`
+            + `点都德(中山四路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_71bc5254dd5f480e8b21abc648cb17d0 = L.marker(
+            [23.13028996512485, 113.30288074975797],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_58421de57505428584bcc8d0cbe425a0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_71bc5254dd5f480e8b21abc648cb17d0.setIcon(icon_58421de57505428584bcc8d0cbe425a0);
+            
+    
+        marker_71bc5254dd5f480e8b21abc648cb17d0.bindTooltip(
+            `<div>`
+            + `点都德(喜粤楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f86dc850b018424f81149d06055d10aa = L.marker(
+            [22.95306227846159, 113.35486931149946],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_2a4572b3d2774abfa9ebd2ad9ba1dac1 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f86dc850b018424f81149d06055d10aa.setIcon(icon_2a4572b3d2774abfa9ebd2ad9ba1dac1);
+            
+    
+        marker_f86dc850b018424f81149d06055d10aa.bindTooltip(
+            `<div>`
+            + `点都德(桥骏和楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_202826547b264a17bc8a41064741611e = L.marker(
+            [23.136498048873435, 113.25420811916334],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8e02afb3692c4ecc88b2a6d3626e2b5b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_202826547b264a17bc8a41064741611e.setIcon(icon_8e02afb3692c4ecc88b2a6d3626e2b5b);
+            
+    
+        marker_202826547b264a17bc8a41064741611e.bindTooltip(
+            `<div>`
+            + `点都德(盘福楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_42c0039655a84ed780fc272fdd3e821a = L.marker(
+            [23.123161704148597, 113.26006951981425],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8a96e25211e14c138bfdfd60ec6b1061 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42c0039655a84ed780fc272fdd3e821a.setIcon(icon_8a96e25211e14c138bfdfd60ec6b1061);
+            
+    
+        marker_42c0039655a84ed780fc272fdd3e821a.bindTooltip(
+            `<div>`
+            + `点都德(聚福楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3f75d9016a5144798525e2a16033e226 = L.marker(
+            [23.157859123992303, 113.20640629069284],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_54858478e62740f299dcfac0dd2b78a0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3f75d9016a5144798525e2a16033e226.setIcon(icon_54858478e62740f299dcfac0dd2b78a0);
+            
+    
+        marker_3f75d9016a5144798525e2a16033e226.bindTooltip(
+            `<div>`
+            + `点都德(金沙洲店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7a0e79488fe9433cbf4ae2779b4149ef = L.marker(
+            [23.203070796097574, 113.23732407570459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_458ca288b1f141d1bf0fba686c139f28 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a0e79488fe9433cbf4ae2779b4149ef.setIcon(icon_458ca288b1f141d1bf0fba686c139f28);
+            
+    
+        marker_7a0e79488fe9433cbf4ae2779b4149ef.bindTooltip(
+            `<div>`
+            + `点都德(金满楼)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5e912ae8f3034c889460fdb0cc742acf = L.marker(
+            [23.148326944987854, 113.32149476040057],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_a2b777b5618b48a4bb490697019e220b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e912ae8f3034c889460fdb0cc742acf.setIcon(icon_a2b777b5618b48a4bb490697019e220b);
+            
+    
+        marker_5e912ae8f3034c889460fdb0cc742acf.bindTooltip(
+            `<div>`
+            + `点都德(和兴楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_64e112d14f1a4a74b90e9f2e0700e8a4 = L.marker(
+            [23.09049768005377, 113.28532281514488],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_eeac33acbf0541a3b443c689e4dc314d = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_64e112d14f1a4a74b90e9f2e0700e8a4.setIcon(icon_eeac33acbf0541a3b443c689e4dc314d);
+            
+    
+        marker_64e112d14f1a4a74b90e9f2e0700e8a4.bindTooltip(
+            `<div>`
+            + `点都德(凤凰楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8b93f879d48f418eb10883af6cb4113c = L.marker(
+            [23.126151090043525, 113.24097050380583],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_7ada2006c2724ff39e1c40d21fc8523d = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b93f879d48f418eb10883af6cb4113c.setIcon(icon_7ada2006c2724ff39e1c40d21fc8523d);
+            
+    
+        marker_8b93f879d48f418eb10883af6cb4113c.bindTooltip(
+            `<div>`
+            + `点都德(大茶楼店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fd0f752877d843e4b3dd1b257411ca98 = L.marker(
+            [23.129398828219117, 113.26353432753649],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_712ad6d6956d4f7aa6cbc69cacd92d14 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fd0f752877d843e4b3dd1b257411ca98.setIcon(icon_712ad6d6956d4f7aa6cbc69cacd92d14);
+            
+    
+        marker_fd0f752877d843e4b3dd1b257411ca98.bindTooltip(
+            `<div>`
+            + `点都德(北京路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1b19b14674e46b192fd0f27f5b71630 = L.marker(
+            [23.120087393101524, 113.26508183033839],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_af520486562c450086084073a3d6776e = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1b19b14674e46b192fd0f27f5b71630.setIcon(icon_af520486562c450086084073a3d6776e);
+            
+    
+        marker_b1b19b14674e46b192fd0f27f5b71630.bindTooltip(
+            `<div>`
+            + `传记潮发牛肉店(北京路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_54cf583a7c9c4f848fcdd9d2ee3176d3 = L.marker(
+            [23.12371717711462, 113.39989962102355],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_9b8ca8327d694e5783d6e33974b8d667 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54cf583a7c9c4f848fcdd9d2ee3176d3.setIcon(icon_9b8ca8327d694e5783d6e33974b8d667);
+            
+    
+        marker_54cf583a7c9c4f848fcdd9d2ee3176d3.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(中山大道店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_80c27ddc46c24286ba735d2e06796988 = L.marker(
+            [23.128305763348497, 113.27662347251595],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_c1aaa6a75e984b0ba0bb39325092d014 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_80c27ddc46c24286ba735d2e06796988.setIcon(icon_c1aaa6a75e984b0ba0bb39325092d014);
+            
+    
+        marker_80c27ddc46c24286ba735d2e06796988.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(中华广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b7f08e3d089419e815cfc6938dc06e5 = L.marker(
+            [23.039352012212362, 113.31415190657553],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_da4eaac6ab544dae9505f7ab3cf9caf9 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b7f08e3d089419e815cfc6938dc06e5.setIcon(icon_da4eaac6ab544dae9505f7ab3cf9caf9);
+            
+    
+        marker_2b7f08e3d089419e815cfc6938dc06e5.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(迎宾大道店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0c94a8ae4704b4f930ce9833f4a0675 = L.marker(
+            [22.973354436768947, 113.30026100857287],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_154e791cad9447279ed8c9854ba41c98 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0c94a8ae4704b4f930ce9833f4a0675.setIcon(icon_154e791cad9447279ed8c9854ba41c98);
+            
+    
+        marker_f0c94a8ae4704b4f930ce9833f4a0675.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(雄峰城店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6c546b80c20c4050ad5db1130c3e1271 = L.marker(
+            [23.123818635509302, 113.32562673818143],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_2fb44002d22b40b0b65a8ae31fa128dd = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c546b80c20c4050ad5db1130c3e1271.setIcon(icon_2fb44002d22b40b0b65a8ae31fa128dd);
+            
+    
+        marker_6c546b80c20c4050ad5db1130c3e1271.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(兴盛路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9eae3dda16304e539406b113cb1d2735 = L.marker(
+            [23.099210266127372, 113.31985929507321],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d7e5ecb22c964dc39c4cae57bc331b5b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9eae3dda16304e539406b113cb1d2735.setIcon(icon_d7e5ecb22c964dc39c4cae57bc331b5b);
+            
+    
+        marker_9eae3dda16304e539406b113cb1d2735.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(新港中路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f893ddc739b4fd0bda3874eb2a71cbf = L.marker(
+            [23.10234214934149, 113.30253477462095],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_67739ebbedef4dc7a3aec49661b19d58 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f893ddc739b4fd0bda3874eb2a71cbf.setIcon(icon_67739ebbedef4dc7a3aec49661b19d58);
+            
+    
+        marker_4f893ddc739b4fd0bda3874eb2a71cbf.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(下渡路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a20d11b976d646bebfc7b7886f82ff9b = L.marker(
+            [23.134326712315403, 113.32748555483577],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_4404c8cbdeda4c18ac3460c7ccadb932 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a20d11b976d646bebfc7b7886f82ff9b.setIcon(icon_4404c8cbdeda4c18ac3460c7ccadb932);
+            
+    
+        marker_a20d11b976d646bebfc7b7886f82ff9b.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(天河南二路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aa3f4ad66684463082cc4d2669ee1a7c = L.marker(
+            [23.144333337086525, 113.33509253080166],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_cbf7a88e499044a192b4bf5ad4ef4de9 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa3f4ad66684463082cc4d2669ee1a7c.setIcon(icon_cbf7a88e499044a192b4bf5ad4ef4de9);
+            
+    
+        marker_aa3f4ad66684463082cc4d2669ee1a7c.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(天河北路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f41883026c8c4315a9cb8f4c97fb4898 = L.marker(
+            [23.13491488015069, 113.37369811767387],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d7b90c747b67494ab4bf402136ae8b27 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f41883026c8c4315a9cb8f4c97fb4898.setIcon(icon_d7b90c747b67494ab4bf402136ae8b27);
+            
+    
+        marker_f41883026c8c4315a9cb8f4c97fb4898.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(棠德南路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ed6e8fed6d7b41049855e1c568bb88b8 = L.marker(
+            [22.95056499724586, 113.35593134860213],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_a41d3ab2fb13407ba8fab31d1b1817df = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed6e8fed6d7b41049855e1c568bb88b8.setIcon(icon_a41d3ab2fb13407ba8fab31d1b1817df);
+            
+    
+        marker_ed6e8fed6d7b41049855e1c568bb88b8.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(市桥店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e81028001ae84e0e86fe11176df53993 = L.marker(
+            [23.136064354359917, 113.36182987452445],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_c4fad6e2cdc149edaf0ad0e519e40bd3 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e81028001ae84e0e86fe11176df53993.setIcon(icon_c4fad6e2cdc149edaf0ad0e519e40bd3);
+            
+    
+        marker_e81028001ae84e0e86fe11176df53993.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(上社店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_431bcfd86a22419caeeb1be103e328b8 = L.marker(
+            [23.176176725893576, 113.49594772918654],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_cc553a8a5850474f81455cd86ada403c = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_431bcfd86a22419caeeb1be103e328b8.setIcon(icon_cc553a8a5850474f81455cd86ada403c);
+            
+    
+        marker_431bcfd86a22419caeeb1be103e328b8.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(萝岗香雪店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ce25022f576f48b781205d67cb40ab8e = L.marker(
+            [23.136242864462105, 113.28004106098582],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_6dff2267934c436382252f1155c5c454 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce25022f576f48b781205d67cb40ab8e.setIcon(icon_6dff2267934c436382252f1155c5c454);
+            
+    
+        marker_ce25022f576f48b781205d67cb40ab8e.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(建设六马路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7e0b3a7b8ea046d1bc9c72c469b7fc9f = L.marker(
+            [23.400397483553164, 113.22662708088477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8af8da5290594406bcaa711163ddb919 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e0b3a7b8ea046d1bc9c72c469b7fc9f.setIcon(icon_8af8da5290594406bcaa711163ddb919);
+            
+    
+        marker_7e0b3a7b8ea046d1bc9c72c469b7fc9f.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(花都来又来店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_48219c0c6c3d4df3940c62a73170d4d1 = L.marker(
+            [23.138171276322588, 113.33783228450976],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_4245babf203e414e992acb573d55f1d3 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_48219c0c6c3d4df3940c62a73170d4d1.setIcon(icon_4245babf203e414e992acb573d55f1d3);
+            
+    
+        marker_48219c0c6c3d4df3940c62a73170d4d1.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(岗顶店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a88a6109c68843c4a12f7bb2001f3d25 = L.marker(
+            [22.932888687311976, 113.38208353198237],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8f7c4d8e4b4b4dd2a248c290fb8d34c9 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a88a6109c68843c4a12f7bb2001f3d25.setIcon(icon_8f7c4d8e4b4b4dd2a248c290fb8d34c9);
+            
+    
+        marker_a88a6109c68843c4a12f7bb2001f3d25.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(番禺广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d424460807cb4679870b25431d603a4f = L.marker(
+            [23.026846277873904, 113.31043175658444],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_98ad7b5abaaf4247adcf6b32e81f2e2d = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d424460807cb4679870b25431d603a4f.setIcon(icon_98ad7b5abaaf4247adcf6b32e81f2e2d);
+            
+    
+        marker_d424460807cb4679870b25431d603a4f.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(大石建华汇店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6fa8943c7d634421b10d8048a0e7a021 = L.marker(
+            [23.24042160858049, 113.27665794742344],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_e75773bc72db4848a1675d4baa51b024 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6fa8943c7d634421b10d8048a0e7a021.setIcon(icon_e75773bc72db4848a1675d4baa51b024);
+            
+    
+        marker_6fa8943c7d634421b10d8048a0e7a021.bindTooltip(
+            `<div>`
+            + `陈记顺和潮汕牛肉(白云嘉禾望岗店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_db6ed6d509c544b08cc5765b8785139e = L.marker(
+            [23.625533532408127, 113.75504352828082],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_aa911b3856b14776aea8be8719282d6d = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db6ed6d509c544b08cc5765b8785139e.setIcon(icon_aa911b3856b14776aea8be8719282d6d);
+            
+    
+        marker_db6ed6d509c544b08cc5765b8785139e.bindTooltip(
+            `<div>`
+            + `北园休闲人家` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_543973bc39844e1f866a26d110c5f577 = L.marker(
+            [23.352850595171756, 113.5175422533543],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_db7e1eba2ea141a38036820e5fc567f6 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_543973bc39844e1f866a26d110c5f577.setIcon(icon_db7e1eba2ea141a38036820e5fc567f6);
+            
+    
+        marker_543973bc39844e1f866a26d110c5f577.bindTooltip(
+            `<div>`
+            + `北园酒楼-停车场` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0b7cd7d115844deae7223c0caff5790 = L.marker(
+            [23.352613493222123, 113.51770751953678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_f71ca77bbe9d43af9fc6f51f61fe560b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0b7cd7d115844deae7223c0caff5790.setIcon(icon_f71ca77bbe9d43af9fc6f51f61fe560b);
+            
+    
+        marker_f0b7cd7d115844deae7223c0caff5790.bindTooltip(
+            `<div>`
+            + `北园酒楼` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b7c77b1dc0f495b997b2c6f27ee3259 = L.marker(
+            [23.13906697345941, 113.26647833836567],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_92a46956127d4e2f8ef74ed6a5f5667e = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b7c77b1dc0f495b997b2c6f27ee3259.setIcon(icon_92a46956127d4e2f8ef74ed6a5f5667e);
+            
+    
+        marker_2b7c77b1dc0f495b997b2c6f27ee3259.bindTooltip(
+            `<div>`
+            + `北园酒家-宿舍小区` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ce22f5ca7043400c8370981ae8755ae1 = L.marker(
+            [23.138827055851213, 113.26736686566514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_1f5861166df04656b8ea472f8dde22f0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce22f5ca7043400c8370981ae8755ae1.setIcon(icon_1f5861166df04656b8ea472f8dde22f0);
+            
+    
+        marker_ce22f5ca7043400c8370981ae8755ae1.bindTooltip(
+            `<div>`
+            + `北园酒家停车场(出入口)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f036e64bdacc4ba3be2e2a2ee028cf07 = L.marker(
+            [23.13905417550226, 113.2676048589355],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_7fd24e5d4221494b83ff3df140e0aaf0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f036e64bdacc4ba3be2e2a2ee028cf07.setIcon(icon_7fd24e5d4221494b83ff3df140e0aaf0);
+            
+    
+        marker_f036e64bdacc4ba3be2e2a2ee028cf07.bindTooltip(
+            `<div>`
+            + `北园酒家地下停车场-出入口` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ea39936e37a4084b2c565f3f3317d58 = L.marker(
+            [23.13924092165657, 113.26735869049489],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_e841866fecf54da8a575fd8f49b41a06 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ea39936e37a4084b2c565f3f3317d58.setIcon(icon_e841866fecf54da8a575fd8f49b41a06);
+            
+    
+        marker_6ea39936e37a4084b2c565f3f3317d58.bindTooltip(
+            `<div>`
+            + `北园酒家-地下停车场` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bee152f86b3f44cabcc7c115e6ff8871 = L.marker(
+            [23.139336028022548, 113.26733864188105],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_879983d6a9ad4846a98a55296ca805a1 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bee152f86b3f44cabcc7c115e6ff8871.setIcon(icon_879983d6a9ad4846a98a55296ca805a1);
+            
+    
+        marker_bee152f86b3f44cabcc7c115e6ff8871.bindTooltip(
+            `<div>`
+            + `北园茶庄(小北路店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_62e85a69548f4a31b30252068ab6b33c = L.marker(
+            [23.14475973386152, 113.3173218297846],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_4e0e845be2664011ba7566dc250000d0 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_62e85a69548f4a31b30252068ab6b33c.setIcon(icon_4e0e845be2664011ba7566dc250000d0);
+            
+    
+        marker_62e85a69548f4a31b30252068ab6b33c.bindTooltip(
+            `<div>`
+            + `半岛名轩酒家-地下停车场` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_27c8629154fd42c895e97fef80fe6f8b = L.marker(
+            [23.131300339321502, 113.3185584400307],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8d7bce90efea4bbdbfbf537b86b0fc76 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_27c8629154fd42c895e97fef80fe6f8b.setIcon(icon_8d7bce90efea4bbdbfbf537b86b0fc76);
+            
+    
+        marker_27c8629154fd42c895e97fef80fe6f8b.bindTooltip(
+            `<div>`
+            + `八合里海记(体育西店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a0e7205253184159826fae9352102242 = L.marker(
+            [23.118664028349976, 113.32629365233676],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_b011a148faeb474ca2cba14ffd42cc22 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0e7205253184159826fae9352102242.setIcon(icon_b011a148faeb474ca2cba14ffd42cc22);
+            
+    
+        marker_a0e7205253184159826fae9352102242.bindTooltip(
+            `<div>`
+            + `Pizza Marzano玛尚诺(天汇广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_edb691598a1f47ebb4b2362d392fbc56 = L.marker(
+            [23.13424080927724, 113.31915242986257],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_e25e8691e1434354bc6aef9ef281e86b = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_edb691598a1f47ebb4b2362d392fbc56.setIcon(icon_e25e8691e1434354bc6aef9ef281e86b);
+            
+    
+        marker_edb691598a1f47ebb4b2362d392fbc56.bindTooltip(
+            `<div>`
+            + `Pizza Marzano玛尚诺(天环广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3c976900182e410caf4e657db2757c25 = L.marker(
+            [23.13423580041532, 113.31915143526489],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_63f345fd786745ec873169f53dd886a2 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3c976900182e410caf4e657db2757c25.setIcon(icon_63f345fd786745ec873169f53dd886a2);
+            
+    
+        marker_3c976900182e410caf4e657db2757c25.bindTooltip(
+            `<div>`
+            + `Pizza Marzano玛尚诺(天环广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f72ec3e8eeaa4cb4b92deed5b9aea7ad = L.marker(
+            [23.139238147089692, 113.27651710511819],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_21993ef23ae24b6588db7d06f70fd686 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f72ec3e8eeaa4cb4b92deed5b9aea7ad.setIcon(icon_21993ef23ae24b6588db7d06f70fd686);
+            
+    
+        marker_f72ec3e8eeaa4cb4b92deed5b9aea7ad.bindTooltip(
+            `<div>`
+            + `Pizza Marzano玛尚诺(保利时光里店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7c970e23ce084f6a8fabdb321c2a7053 = L.marker(
+            [23.137316893987233, 113.32675637046988],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_32549df30b5f46499e89d314e5b6892f = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c970e23ce084f6a8fabdb321c2a7053.setIcon(icon_32549df30b5f46499e89d314e5b6892f);
+            
+    
+        marker_7c970e23ce084f6a8fabdb321c2a7053.bindTooltip(
+            `<div>`
+            + `Pizza Marzano玛尚诺` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_428237f0c0074f91bcfe4ca557ddba59 = L.marker(
+            [23.1231384735083, 113.29467263366718],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_5f5908267a844adc958a22f169eea383 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_428237f0c0074f91bcfe4ca557ddba59.setIcon(icon_5f5908267a844adc958a22f169eea383);
+            
+    
+        marker_428237f0c0074f91bcfe4ca557ddba59.bindTooltip(
+            `<div>`
+            + `NO.7HOST·七号私厨` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a27991a9e3704083ad4819bd903e9409 = L.marker(
+            [23.12097143291706, 113.32067474662264],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_f268ac9c647d4cad82671458ac28dfc7 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a27991a9e3704083ad4819bd903e9409.setIcon(icon_f268ac9c647d4cad82671458ac28dfc7);
+            
+    
+        marker_a27991a9e3704083ad4819bd903e9409.bindTooltip(
+            `<div>`
+            + `Mercato莫卡多露台餐厅与酒吧` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c1be30d52eb440f6bdce321b1c09198c = L.marker(
+            [23.09830600126092, 113.26789306260514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_1f39c28520c54617ae7d10e9916a7e67 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1be30d52eb440f6bdce321b1c09198c.setIcon(icon_1f39c28520c54617ae7d10e9916a7e67);
+            
+    
+        marker_c1be30d52eb440f6bdce321b1c09198c.bindTooltip(
+            `<div>`
+            + `COLINMINT简悦厨(富力海珠城店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f55d6351462249bfa00323f6a85cf411 = L.marker(
+            [23.140330321249294, 113.28087543725454],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_ae1b3f6b40a14b2e852aa6fa0839d7dd = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f55d6351462249bfa00323f6a85cf411.setIcon(icon_ae1b3f6b40a14b2e852aa6fa0839d7dd);
+            
+    
+        marker_f55d6351462249bfa00323f6a85cf411.bindTooltip(
+            `<div>`
+            + `COVA(丽柏广场店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5de031b13dcf4ff3be3ccc236848a017 = L.marker(
+            [23.12244897734974, 113.40070946727158],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_11421261aa6546a2bf3d65e984409105 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5de031b13dcf4ff3be3ccc236848a017.setIcon(icon_11421261aa6546a2bf3d65e984409105);
+            
+    
+        marker_5de031b13dcf4ff3be3ccc236848a017.bindTooltip(
+            `<div>`
+            + `海门鱼仔店(东圃店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_266bbaccc1ff40cd89566c520ab96e1d = L.marker(
+            [23.12827992922522, 113.33847636172597],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_c2c7b8cdf7634caeaafa4cd1c171cb02 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_266bbaccc1ff40cd89566c520ab96e1d.setIcon(icon_c2c7b8cdf7634caeaafa4cd1c171cb02);
+            
+    
+        marker_266bbaccc1ff40cd89566c520ab96e1d.bindTooltip(
+            `<div>`
+            + `海门鱼仔店(农信店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f37e8ee2e7a7474d8cb179c23d4679b5 = L.marker(
+            [23.116638770844904, 113.27714551103182],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_8ba130073bd3478db05651f805444b5a = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f37e8ee2e7a7474d8cb179c23d4679b5.setIcon(icon_8ba130073bd3478db05651f805444b5a);
+            
+    
+        marker_f37e8ee2e7a7474d8cb179c23d4679b5.bindTooltip(
+            `<div>`
+            + `海门鱼仔(海港城店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aabb276ac0314144b41bed8207badd82 = L.marker(
+            [23.118205638118038, 113.32620169089562],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_3af1c2732330447e848d4f751ef8f587 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aabb276ac0314144b41bed8207badd82.setIcon(icon_3af1c2732330447e848d4f751ef8f587);
+            
+    
+        marker_aabb276ac0314144b41bed8207badd82.bindTooltip(
+            `<div>`
+            + `莫尔顿扒房` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_86dd8776bd4c4dd8aaf734030d5d393d = L.marker(
+            [23.118316051648225, 113.26888059277451],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_7c61286eb1334309b7308633eb664902 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86dd8776bd4c4dd8aaf734030d5d393d.setIcon(icon_7c61286eb1334309b7308633eb664902);
+            
+    
+        marker_86dd8776bd4c4dd8aaf734030d5d393d.bindTooltip(
+            `<div>`
+            + `五号茶居` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_16516c1e59144a9f8a236e91d85c4a24 = L.marker(
+            [23.129467345565114, 113.31379833634963],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_fa4f53526a514e0f9e74e6983d3eb1d4 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_16516c1e59144a9f8a236e91d85c4a24.setIcon(icon_fa4f53526a514e0f9e74e6983d3eb1d4);
+            
+    
+        marker_16516c1e59144a9f8a236e91d85c4a24.bindTooltip(
+            `<div>`
+            + `熹素HERSELS(保利店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9d17b8e76ec8484c9f4a9c68f7a5a971 = L.marker(
+            [23.095826434223028, 113.26138059773473],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_898aca68f47c4314bcf6a5f3ceb1e88f = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9d17b8e76ec8484c9f4a9c68f7a5a971.setIcon(icon_898aca68f47c4314bcf6a5f3ceb1e88f);
+            
+    
+        marker_9d17b8e76ec8484c9f4a9c68f7a5a971.bindTooltip(
+            `<div>`
+            + `熹素广百新一城店` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_57086c399e6948b1b5a0a68495d86701 = L.marker(
+            [23.12629220510113, 113.33872662490775],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_b1c4f5f3a31b4594bd2a0347459029d4 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_57086c399e6948b1b5a0a68495d86701.setIcon(icon_b1c4f5f3a31b4594bd2a0347459029d4);
+            
+    
+        marker_57086c399e6948b1b5a0a68495d86701.bindTooltip(
+            `<div>`
+            + `熹素·鲜美素食(太阳新天地店)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5fbeb92e545942719cbf3a7daae6b69b = L.marker(
+            [23.120746594819295, 113.32098922137332],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_29c0348bce834219b03c471432e2fcc2 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5fbeb92e545942719cbf3a7daae6b69b.setIcon(icon_29c0348bce834219b03c471432e2fcc2);
+            
+    
+        marker_5fbeb92e545942719cbf3a7daae6b69b.bindTooltip(
+            `<div>`
+            + `蔓莳创意美蔬` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5b74f90e2172460c8bccc90b9b4e95ec = L.marker(
+            [23.13707711553235, 113.32697667803252],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d9c203653d5e43a895754508adfaa8e7 = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5b74f90e2172460c8bccc90b9b4e95ec.setIcon(icon_d9c203653d5e43a895754508adfaa8e7);
+            
+    
+        marker_5b74f90e2172460c8bccc90b9b4e95ec.bindTooltip(
+            `<div>`
+            + `江 由辉师傅主理` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ff0a560b35df486994e62d76ad889166 = L.marker(
+            [23.12262063101802, 113.321576567986],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_03f3c424f9d74e699ba0b231a97434f2);
+        
+    
+
+                var icon_d34c81eeb49047f8be6b261b8eb3bd0f = L.AwesomeMarkers.icon({
+                    icon: 'utensils',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff0a560b35df486994e62d76ad889166.setIcon(icon_d34c81eeb49047f8be6b261b8eb3bd0f);
+            
+    
+        marker_ff0a560b35df486994e62d76ad889166.bindTooltip(
+            `<div>`
+            + `宋 川菜` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
