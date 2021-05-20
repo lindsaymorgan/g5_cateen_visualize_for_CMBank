@@ -1,6 +1,6 @@
 # g5_cateen_visualize_for_CMBank
 
-Visualize all th G5 restaurants coperate with CMB bank Guangzhou 
+Visualize all the G5 restaurants cooperate with CMB bank Guangzhou 
 
 1. get all the latitude and longtitude of those restaurants by crawling BaiduMap
 2. visual them and bank locations on the map, with search bar
